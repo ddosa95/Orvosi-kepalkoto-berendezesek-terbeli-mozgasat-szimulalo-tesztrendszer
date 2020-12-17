@@ -1,0 +1,114 @@
+{
+  "json_type": "part_list",
+  "exclude_from_collision": [
+    [
+      "motor_1",
+      "part_1"
+    ]],
+   "list": [
+    {
+      "part": {
+        "name": "part_1",
+        "position": [
+          75,
+          45,
+          150
+        ],
+        "extension": [
+          200,
+          10,
+          70
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "part": {
+        "name": "part_2",
+        "position": [
+          175,
+          45,
+          150
+        ],
+        "extension": [
+          15,
+          15,
+          15
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "motor": {
+          "target_names": {
+            "bed_rotatory": "linearly",
+            "bed": "linearly"
+          },
+          "simulation_path": "/petspect/motors/bedslider"
+        }
+      }
+    },
+     {
+      "part": {
+        "name": "motor",
+        "position": [
+          75,
+          55,
+          150
+        ],
+        "extension": [
+          200,
+          10,
+          10
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "motor": {
+          "target_names": {
+            "bed_rotatory": "rotationally",
+            "bed": "rotationally"
+          },
+          "simulation_path": "/petspect/motors/bedrotatory"
+        },
+        "linear_motion": {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "linear_end_states": [
+            [
+              74,
+              55,
+              150
+            ],
+            [
+              376,
+              55,
+              150
+            ]
+          ]
+        },
+        "rotating_motion": {
+          "rotation_centre_point": [
+            275,
+            60,
+            150
+          ],
+          "rotation_axis": [
+            1,
+            0,
+            0
+          ]
+        }
+      }
+    }
+     ]}

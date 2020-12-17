@@ -1,0 +1,387 @@
+{
+  "json_type": "part_list",
+  "exclude_from_collision": [
+    [
+      "bed_holder_1",
+      "bed_holder_2"
+    ],
+    [
+      "bed_holder_2",
+      "bed_slider"
+    ],
+    [
+      "bed_slider",
+      "bed_rotatory"
+    ],
+    [
+      "bed_holder_2",
+      "bed_rotatory"
+    ],
+    [
+      "bed_rotatory",
+      "bed"
+    ],
+    [
+      "ct_1",
+      "spect_rotatory_1"
+    ],
+    [
+      "ct_1",
+      "spect_rotatory_2"
+    ],
+    [
+      "ct_2",
+      "spect_rotatory_1"
+    ],
+    [
+      "ct_2",
+      "spect_rotatory_2"
+    ]
+  ],
+  "list": [
+    {
+      "part": {
+        "name": "bed_holder_1",
+        "position": [
+          75,
+          20,
+          150
+        ],
+        "extension": [
+          150,
+          40,
+          40
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "part": {
+        "name": "bed_holder_2",
+        "position": [
+          75,
+          45,
+          150
+        ],
+        "extension": [
+          200,
+          10,
+          70
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "part": {
+        "name": "bed_slider",
+        "position": [
+          175,
+          45,
+          150
+        ],
+        "extension": [
+          15,
+          15,
+          15
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "motor": {
+          "target_names": {
+            "bed_rotatory": "linearly",
+            "bed": "linearly"
+          },
+          "simulation_path": "/spectct/motors/bedslider"
+        }
+      }
+    },
+    {
+      "part": {
+        "name": "bed_rotatory",
+        "position": [
+          75,
+          55,
+          150
+        ],
+        "extension": [
+          200,
+          10,
+          10
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "motor": {
+          "target_names": {
+            "bed_rotatory": "rotationally",
+            "bed": "rotationally"
+          },
+          "simulation_path": "/spectct/motors/bedrotatory"
+        },
+        "linear_motion": {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "linear_end_states": [
+            [
+              74,
+              55,
+              150
+            ],
+            [
+              376,
+              55,
+              150
+            ]
+          ]
+        },
+        "rotating_motion": {
+          "rotation_centre_point": [
+            0,
+            60,
+            150
+          ],
+          "rotation_axis": [
+            0,
+            0,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "part": {
+        "name": "bed",
+        "position": [
+          75,
+          60,
+          150
+        ],
+        "extension": [
+          200,
+          10,
+          70
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "linear_motion": {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "linear_end_states": [
+            [
+              74,
+              60,
+              150
+            ],
+            [
+              376,
+              60,
+              150
+            ]
+          ]
+        },
+        "rotating_motion": {
+          "rotation_centre_point": [
+            0,
+            60,
+            150
+          ],
+          "rotation_axis": [
+            0,
+            0,
+            1
+          ],
+          "rotating_end_states": [
+            [
+              0,
+              0,
+              -0.5
+            ],
+            [
+              0,
+              0,
+              0.5
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "part": {
+        "name": "ct_1",
+        "position": [
+          275,
+          120,
+          40
+        ],
+        "extension": [
+          80,
+          240,
+          80
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "part": {
+        "name": "ct_2",
+        "position": [
+          275,
+          120,
+          260
+        ],
+        "extension": [
+          80,
+          240,
+          80
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "part": {
+        "name": "spect_rotatory_1",
+        "position": [
+          275,
+          20,
+          150
+        ],
+        "extension": [
+          80,
+          40,
+          140
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "motor": {
+          "target_names": {
+            "spect_1": "rotationally"
+          },
+          "simulation_path": "/spectct/motors/spectrotatory1"
+        }
+      }
+    },
+    {
+      "part": {
+        "name": "spect_rotatory_2",
+        "position": [
+          275,
+          220,
+          150
+        ],
+        "extension": [
+          80,
+          40,
+          140
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "motor": {
+          "target_names": {
+            "spect_2": "rotationally"
+          },
+          "simulation_path": "/spectct/motors/spectrotatory2"
+        }
+      }
+    },
+    {
+      "part": {
+        "name": "spect_1",
+        "position": [
+          210,
+          25,
+          150
+        ],
+        "extension": [
+          40,
+          30,
+          60
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "rotating_motion": {
+          "rotation_centre_point": [
+            210,
+            120,
+            150
+          ],
+          "rotation_axis": [
+            1,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "part": {
+        "name": "spect_2",
+        "position": [
+          210,
+          215,
+          150
+        ],
+        "extension": [
+          40,
+          30,
+          60
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "rotating_motion": {
+          "rotation_centre_point": [
+            210,
+            120,
+            150
+          ],
+          "rotation_axis": [
+            1,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  ]
+}

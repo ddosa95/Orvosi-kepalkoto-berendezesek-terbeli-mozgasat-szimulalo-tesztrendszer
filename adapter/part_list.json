@@ -1,0 +1,173 @@
+{
+  "json_type": "part_list",
+  "exclude_from_collision": [
+    ["P004", "P005"],
+    ["P005", "P006"]
+  ],
+  "list":[
+    {
+      "part":{
+        "name":"P001",
+        "position":{
+            "x":100,
+            "y":100,
+            "z":100
+        },
+        "extension":{
+            "x": 10,
+            "y": 10,
+            "z": 10
+        },
+        "rotation":{
+            "x": 3,
+            "y": 3,
+            "z": 3
+        },
+        "type":"static"
+      }
+    },
+    {
+      "part":{
+        "name":"P002",
+        "position":{
+            "x": 120,
+            "y": 120,
+            "z": 120
+        },
+        "extension":{
+            "x": 15,
+            "y": 15,
+            "z": 15
+        },
+        "rotation":{
+            "x": 2,
+            "y": 2,
+            "z": 2
+        },
+        "type": "static"
+      }
+    },
+    {
+      "part":{
+        "name":"P003",
+        "position":{
+            "x":30,
+            "y":10,
+            "z":150
+        },
+        "extension":{
+            "x":80,
+            "y":30,
+            "z":50
+        },
+        "rotation":{
+            "x":2,
+            "y":2,
+            "z":2
+        },
+        "type":"static"
+      }
+    },
+    {
+      "part":{
+        "name":"P004",
+        "position":{
+            "x":200,
+            "y":0,
+            "z":200
+        },
+        "extension":{
+            "x":50,
+            "y":50,
+            "z":50
+        },
+        "rotation":{
+            "x":0,
+            "y":0,
+            "z":0
+        },
+        "type":"motor",
+        "target_ids": ["P005", "P006"],
+        "simulation_path": "/remelem/jolesz/motor1"
+      }
+    },
+    {
+      "part":{
+        "name":"P005",
+        "position":{
+            "x":200,
+            "y":25,
+            "z":200
+        },
+        "extension":{
+            "x":10,
+            "y":50,
+            "z":10
+        },
+        "rotation":{
+            "x":0,
+            "y":0,
+            "z":0
+        },
+        "type":"mobile",
+        "direction":{
+          "x": 0,
+          "y": 1,
+          "z": 0
+        }
+      }
+    },
+    {
+      "part":{
+        "name":"P006",
+        "position":{
+            "x":200,
+            "y":65,
+            "z":200
+        },
+        "extension":{
+            "x":30,
+            "y":30,
+            "z":30
+        },
+        "rotation":{
+            "x":0,
+            "y":0,
+            "z":0
+        },
+        "type":"mobile",
+        "direction":{
+          "x": 0,
+          "y": 1,
+          "z": 0
+        }
+      }
+    },
+    {
+      "part":{
+        "name":"P007",
+        "position":{
+            "x":200,
+            "y":130,
+            "z":200
+        },
+        "extension":{
+            "x":60,
+            "y":60,
+            "z":60
+        },
+        "rotation":{
+            "x":0,
+            "y":0,
+            "z":0
+        },
+        "type":"static"
+      }
+    }
+  ]
+}
+
+
+
+
+

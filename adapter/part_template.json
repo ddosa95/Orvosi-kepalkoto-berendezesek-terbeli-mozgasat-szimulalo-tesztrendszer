@@ -1,0 +1,88 @@
+// a json sajna nem enegélyezi a kommentezést, mégis elékszítettem azt a templatet, hogy segítse a kitöltést
+
+{
+  "list": {
+    "part": {
+      "name": "",
+      // a kezdeti poziviót jelző vektor:
+      "position": [
+      ],
+      // a tégletest élhosszai:
+      "extension": [
+      ],
+      // a téglatest elfordulása:
+      "rotation": [
+      ],
+      // ha az adott alkatrész motor, akkor kell kitölteni:
+      "motor": {
+        "target_names": {
+          // a key a mozgatni kívánt elem, és a value, hogy hogyan "rotationally" vagy "linearly"
+          "": "",
+          "": ""
+        },
+        // a tango device elérési útja
+        "simulation_path": ""
+      },
+      // ha az adott alkatrész végez lineáris mozgást, akkor kell kitölteni:
+      "linear_motion": {
+        // az egyenes vonalú mozgás irányvektora
+        "direction": [
+        ],
+        // az alkatrész középpontjának eközött a két helyvektor között kell lennie, a mozgási korlátok, akkor használjuk, ha meg akarjuk adni
+        "linear_end_states": [
+          [],
+          []
+        ]
+      },
+      // ha végez forgó mozgást, akkor kell kitölteni:
+      "rotating_motion": {
+        // e körül a pont körül forog
+        "rotation_centre_point": [
+        ],
+        // ezen tengely mentén forog
+        "rotation_axis": [
+        ],
+        // a elfordulások lehetséges szésőértékei, akkor ha meg akarjuk adni
+        "rotating_end_states": [
+          [],
+          []
+        ]
+      }
+    },
+
+  "part": {
+    "name": "",
+    "position": [
+    ],
+    "extension": [
+    ],
+    "rotation": [
+    ],
+    "motor": {
+      "target_names": {
+        "": "",
+        "": ""
+      },
+      "simulation_path": ""
+    },
+    "linear_motion": {
+      "direction": [
+      ],
+      "linear_end_states": [
+        [],
+        []
+      ]
+    },
+    "rotating_motion": {
+      "rotation_centre_point": [
+      ],
+      "rotation_axis": [
+      ],
+      "rotating_end_states": [
+        [],
+        []
+      ]
+    }
+  }
+}
+}

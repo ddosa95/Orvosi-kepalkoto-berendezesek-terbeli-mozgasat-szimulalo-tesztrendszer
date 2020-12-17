@@ -1,0 +1,93 @@
+{
+  "list": [
+    {
+      "motor": {
+        "name": "bed_slider",
+        "simulation_path": "/spectct/motors/bedslider",
+        "program": [
+          {
+            "time": 40,
+            "speed": 0
+          },
+          {
+            "time": 20,
+            "speed": 0.5
+          },
+          {
+            "time": 100,
+            "speed": 0
+          }
+        ]
+      }
+    },
+    {
+      "motor": {
+        "name": "bed_rotatory",
+        "simulation_path": "/spectct/motors/bedrotatory",
+        "program": [
+          {
+            "time": 60,
+            "speed": 0
+          },
+          {
+            "time": 2,
+            "speed": 0.01
+          },
+          {
+            "time": 100,
+            "speed": 0
+          }
+        ]
+      }
+    },
+    {
+      "motor": {
+        "name": "spect_rotatory_1",
+        "simulation_path": "/spectct/motors/spectrotatory1",
+        "program": [
+          {
+            "time": 60,
+            "speed": 0
+          },
+          {
+            "time": 50,
+            "speed": 0.05
+          },
+          {
+          "time": 50,
+          "speed": -0.05
+          },
+          {
+            "time": 100,
+            "speed": 0
+          }
+        ]
+      }
+    },
+    {
+      "motor": {
+        "name": "spect_rotatory_2",
+        "simulation_path": "/spectct/motors/spectrotatory2",
+        "program": [
+          {
+            "time": 60,
+            "speed": 0
+          },
+          {
+            "time": 50,
+            "speed": 0.05
+          },
+          {
+            "time": 50,
+            "speed": 0.05
+          },
+          {
+            "time": 100,
+            "speed": 0
+          }
+        ]
+      }
+    }
+  ]
+}
+
